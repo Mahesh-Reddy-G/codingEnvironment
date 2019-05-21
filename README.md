@@ -2,7 +2,8 @@
 Before starting any development projects first we should confirm whether the below softwares are installed in your computer or not:
 Sublime text editor, Mongodb, Nodejs, Gitbash, Ruby, localhost.
 
-Here are the steps to be followed to use the code from this GIT repo:
+Here are the steps to be followed to use the code from this GIT repo.
+git clone https://github.com/Mahesh-Reddy-G/codingEnvironment.git  
 cd Project/.
 Run "npm install". (This will create nodemodules)
 cd Project/public/
