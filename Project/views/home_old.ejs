@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<script type="text/javascript" src="/externalFiles/jsFiles/jquery.min.js"></script>
+	<script type="text/javascript" src="/externalFiles/jsFiles/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/externalFiles/cssFiles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/homePage.css">
+</head>
+<body style="background-color: #34495e;">
+	<div class="container">
+	    <h2 class="welcomeHeader">Welcome <%= userData.username %></h2>
+	    <a href="/logout">logout</a>
+
+	    <h2 class="text-center" id="magicHeader"></h2>
+
+	    <div class="eyes">
+	    	<div class="eye">
+	    		<div class="boll"></div>
+	    	</div>
+	    	<div class="eye">
+	    		<div class="boll"></div>
+	    	</div>
+	    </div>
+
+	</div>
+
+	<script type="text/javascript">
+		var boll = document.getElementsByClassName("boll");
+		document.onmousemove = function(){
+			var x = event.clientX * 100 / window.innerWidth + "%";
+			var y = event.clientY * 100 / window.innerHeight + "%";
+
+			for(var i=0; i<2; i++){
+				boll[i].style.left = x;
+				boll[i].style.top = y;
+				boll[i].style.transform = "translate(-"+x+", -"+y+")";
+			}
+		}
+
+		var i = 0, txt = 'Move the cursor to see the magic !!', speed = 100;
+		typeWriter();
+		function typeWriter() {
+		  if (i < txt.length) {
+		    document.getElementById("magicHeader").innerHTML += txt.charAt(i);
+		    i++;
+		    setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>
+
+<!--
+	event.clientX => get the horizontal coordinates of the mousemove
+	event.clientY => get the vertical coordinates of the mousemove
+	window.innerWidth => get the browser width
+	window.innerHeight => get the browser height
+-->
