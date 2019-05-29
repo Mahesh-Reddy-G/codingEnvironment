@@ -1,0 +1,7 @@
+{
+	"name": "progressive web app",
+	"short_name": "pwa",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait"
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pwa</title>
+	<meta charset="utf-8">
+	<meta name="author" content="mahesh">
+	<meta name="description" content="progressive web app">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="manifest" href="manifest.json">
+</head>
+<style type="text/css">
+	body{
+		background-color: #eee;
+	}
+	h2{
+			font-family: calibri;
+	}
+	.box{
+		background-color: white;
+		width: 300px;
+		max-height: 200px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 15px;
+		transition: max-height 0.7s;
+	}
+	.enlargeBox{
+		background-color: white;
+		width: 300px;
+		max-height: 400px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 15px;
+		transition: max-height 0.7s;
+	}
+</style>
+<body>
+	<h2 class="text-center">Progressive web app</h2>
+<div class="box">
+	<p>A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users.A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users.</p>
+		<p>A service worker, written in JavaScript, is like a client-side proxy and puts you in control of...</p>
+</div>
+<br>
+<button class="btn btn-primary center-block">Show more</button>
+</body>
+</html>
